@@ -52,6 +52,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
 ]
 
 ROOT_URLCONF = 'myproject.urls'
@@ -139,4 +140,3 @@ GRAPHENE = {
 }
 
 CORS_ORIGIN_ALLOW_ALL = True
-# CORS_ORIGIN_WHITELIST = ("http://localhost:8200","http://localhost:8100", "http://10.50.20.74:8100", "http://10.50.20.74:8100", "http://localhost:8100/ ")
