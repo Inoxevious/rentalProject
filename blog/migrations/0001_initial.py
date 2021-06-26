@@ -18,22 +18,14 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Tag',
             fields=[
-<<<<<<< HEAD
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-=======
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
->>>>>>> a1333f8bd323e9c4ea3bd250179c67c04d7fc87d
                 ('name', models.CharField(max_length=50, unique=True)),
             ],
         ),
         migrations.CreateModel(
             name='Profile',
             fields=[
-<<<<<<< HEAD
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-=======
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
->>>>>>> a1333f8bd323e9c4ea3bd250179c67c04d7fc87d
                 ('website', models.URLField(blank=True, null=True)),
                 ('bio', models.CharField(blank=True, max_length=240, null=True)),
                 ('user', models.OneToOneField(on_delete=django.db.models.deletion.PROTECT, to=settings.AUTH_USER_MODEL)),
@@ -42,11 +34,7 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Post',
             fields=[
-<<<<<<< HEAD
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-=======
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
->>>>>>> a1333f8bd323e9c4ea3bd250179c67c04d7fc87d
                 ('title', models.CharField(max_length=255, unique=True)),
                 ('subtitle', models.CharField(blank=True, max_length=255, null=True)),
                 ('slug', models.SlugField(max_length=255, unique=True)),
